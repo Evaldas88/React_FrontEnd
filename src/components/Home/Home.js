@@ -1,11 +1,12 @@
 import React from 'react';
- import './Home.css';
 
 const Home = () => (
-  <div className="Home" data-testid="Home">
-    Home Component
+  <div className="container ">
+    <div className='position-absolute top-50 start-50 translate-middle'>
+      <h1>Hi Welcome to My the  Travel Crud App with Laravel backend</h1>
+    </div>
   </div>
 );
 
- 
+
 export default Home;

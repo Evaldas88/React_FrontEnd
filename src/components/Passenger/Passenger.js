@@ -12,8 +12,7 @@ const Passenger = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [refresh, setRefresh] = useState(false);
   const [flight, setFlight] = useState([]);
-
-
+ 
     useEffect(() => {
     fetch("http://localhost:8000/api/Passenger")
       .then(res => res.json())
@@ -81,6 +80,7 @@ const Passenger = () => {
   return (
    
       <div className="container">
+           
         <table className="table mt-5 ">
           <thead>
             <tr>

@@ -55,7 +55,12 @@ function EditCustomer() {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(data)
-        axios.put('http://localhost:8000/api/Passenger/' + id, data)
+        axios.put('http://localhost:8000/api/Passenger/' + id, data , {
+            headers: {
+              Accept: "application/json",
+              
+            }
+        })
             .then(resp => {
                 console.log(resp)
                 navigate("/Passenger");

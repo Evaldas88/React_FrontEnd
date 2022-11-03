@@ -50,6 +50,8 @@ const Flights = () => {
     const formData = new FormData(e.target)
     axios.post('http://127.0.0.1:8000/api/Flights', formData)
       .then(resp => {
+        setRefresh(!refresh)
+
          console.log(resp)
       })
       .catch(err => console.log(err))
